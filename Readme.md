@@ -61,7 +61,7 @@ The IAM Role to run the function as requires the Managed Policy AWSLambdaBasicEx
         }
     ]
 }
-
+```
 ## Sample
 A sample log for a run of the function is below:
 
