@@ -23,7 +23,7 @@ If we are tagging a snapshot with a deleted parent instance, we use the matching
 If an environment variable does not exist for this particular tag, we use the CATCH_ALL_TAG_VALUE (which is mandatory for the lambda function to run).
 Full logging is written to CloudWatch to show what was and was not tagged on a given run.
  
-##Environment Variables
+## Environment Variables
 Example environment variables:
 ```
 Application_DefaultValue: GeneralIT
@@ -34,7 +34,7 @@ ManagedBy_DefaultValue: support.team@mycompany.com
 TAG_COMPLIANCE_RULE_NAME: required-tags
 ```
 
-##Deployment
+## Deployment
 The Lambda Function should be deployed as a Python 3.6 function, with a CloudWatch event trigger (e.g. daily) and a 5 minute timeout.
 
 There are two mandatory Environment Variables CATCH_ALL_TAG_VALUE and TAG_COMPLIANCE_RULE_NAME.
